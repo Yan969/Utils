@@ -31,7 +31,7 @@ public class FileUploadUtils {
 			dest.getParentFile().mkdirs();
 		}
 		try {
-			file.transferTo(dest);//把图片转换到现在的url
+			file.transferTo(dest);//将内存中的数据写入到磁盘中
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
