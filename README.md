@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileUploadUtils {
 	
 	//输入文件返回带文件名的文件存储路径
-	public String uploadFile(MultipartFile file, String localPath, String projectPath) {
+	public static String uploadFile(MultipartFile file, String localPath, String projectPath) {
 		if(file.isEmpty()) {
 			System.out.println("文件为空");
 		}
