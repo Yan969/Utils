@@ -16,7 +16,7 @@ public class FileUploadUtils {
 		String fileName=file.getOriginalFilename();
 		//获取文件的后缀名
 		String suffixName = fileName.substring(fileName.lastIndexOf("."));
-		//本地存储的绝对路径（虚拟路径） 示例：/Users/yanyue/ideaJavaWeb/upload/image/
+		//本地存储的绝对路径（虚拟路径） 示例：/Users/xxx/ideaJavaWeb/upload/image/
 		//String filePath = absolutePath;
 		//新的文件名（随机文件名+文件后缀）
 		fileName=UUID.randomUUID()+suffixName;
